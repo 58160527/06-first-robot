@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.2 (Python 3.6.0 on win32)" generated="20171125 11:48:32.590">
+<suite id="s1" name="Register.Spec" source="C:\Users\informatics\06-first-robot\test\register.spec.robot">
+<test id="s1-t1" name="Open Register Page Successful">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>http://angsila.cs.buu.ac.th/~wittawas/601/887240/labs/testdemo/index.php</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20171125 11:48:32.706" level="INFO">Opening browser 'chrome' to base url 'http://angsila.cs.buu.ac.th/~wittawas/601/887240/labs/testdemo/index.php'.</msg>
+<status status="PASS" starttime="20171125 11:48:32.706" endtime="20171125 11:48:36.337"></status>
+</kw>
+<status status="PASS" starttime="20171125 11:48:32.705" endtime="20171125 11:48:36.338" critical="yes"></status>
+</test>
+<test id="s1-t2" name="Register Page Check All Required Fields">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>http://angsila.cs.buu.ac.th/~wittawas/601/887240/labs/testdemo/index.php/register</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20171125 11:48:36.339" level="INFO">Opening browser 'chrome' to base url 'http://angsila.cs.buu.ac.th/~wittawas/601/887240/labs/testdemo/index.php/register'.</msg>
+<status status="PASS" starttime="20171125 11:48:36.339" endtime="20171125 11:48:39.969"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>id=btn_submit</arg>
+</arguments>
+<msg timestamp="20171125 11:48:39.970" level="INFO">Clicking element 'id=btn_submit'.</msg>
+<status status="PASS" starttime="20171125 11:48:39.970" endtime="20171125 11:48:40.097"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>The Email field is required.</arg>
+</arguments>
+<status status="PASS" starttime="20171125 11:48:40.098" endtime="20171125 11:48:40.135"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>The Password field is required.</arg>
+</arguments>
+<status status="PASS" starttime="20171125 11:48:40.136" endtime="20171125 11:48:40.168"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>The Re-type Password field is required.</arg>
+</arguments>
+<status status="PASS" starttime="20171125 11:48:40.168" endtime="20171125 11:48:40.186"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>The Name field is required.</arg>
+</arguments>
+<status status="PASS" starttime="20171125 11:48:40.186" endtime="20171125 11:48:40.205"></status>
+</kw>
+<status status="PASS" starttime="20171125 11:48:36.338" endtime="20171125 11:48:40.205" critical="yes"></status>
+</test>
+<kw name="Close All Browsers" library="SeleniumLibrary" type="teardown">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20171125 11:48:40.206" endtime="20171125 11:48:46.415"></status>
+</kw>
+<status status="PASS" starttime="20171125 11:48:32.591" endtime="20171125 11:48:46.415"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0">Critical Tests</stat>
+<stat pass="2" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" id="s1" name="Register.Spec">Register.Spec</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
